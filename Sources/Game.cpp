@@ -22,8 +22,10 @@ int     score;          //!< スコア
 void Start()
 {
     cloudPos = Vector2(-320, 100);
-    cannonPos = Vector2(-80, -150);
-    targetRect = Rect(80, -140, 40, 40);
+    // 砲台は画面左に移動
+    cannonPos = Vector2(-300, -150);
+    // ターゲット画面右に移動
+    targetRect = Rect(260, -140, 40, 40);
     bulletPos.x = -999;
     score = 0;
 }
